@@ -38,6 +38,10 @@ public class TodoItem {
     @Setter
     private Instant modifiedDate;
 
+    @Getter
+    @Setter
+    private String owner;
+
     public TodoItem() {}
 
     public TodoItem(String description) {
@@ -52,6 +56,10 @@ public class TodoItem {
             return String.format("TodoItem{id=%d, description='%s', complete='%s', createdDate='%s', modifiedDate='%s'}",
             id, description, complete, createdDate, modifiedDate);
         }
+
+  
+
+    
     }
 
     
